@@ -38,3 +38,8 @@ Set up config file and replace with proper credentials
 cp config.example.yaml config.yaml
 ```
 
+### Running
+
+```
+python pipeline.py
+```
