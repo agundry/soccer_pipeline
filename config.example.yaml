@@ -1,0 +1,8 @@
+db:
+  host: localhost
+  user: root
+  password: my-secret-pw
+  name: soccer
+  port: 13306
+
+bearer_token: BEARER_TOKEN

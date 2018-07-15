@@ -16,6 +16,32 @@ CREATE TABLE `tweets` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPRESSED;
 
+INSERT INTO `teams` (`name`, `twitter_handle`)
+VALUES
+	('Atlanta United FC', 'ATLUTD'),
+	('Chicago Fire', 'ChicagoFire'),
+	('Columbus Crew SC', 'ColumbusCrewSC'),
+	('D.C. United', 'dcunited'),
+	('Montreal Impact', 'impactmontreal'),
+	('New England Revolution', 'NERevolution'),
+	('New York City FC', 'NYCFC'),
+	('New York Red Bulls', 'NewYorkRedBulls'),
+	('Orlando City SC', 'OrlandoCitySC'),
+	('Philadelphia Union', 'PhilaUnion'),
+	('Toronto FC', 'torontofc'),
+	('Colorado Rapids', 'ColoradoRapids'),
+	('FC Dallas', 'FCDallas'),
+	('Houston Dynamo', 'HoustonDynamo'),
+	('LA Galaxy', 'LAGalaxy'),
+	('Los Angeles FC', 'LAFC'),
+	('Minnesota United FC', 'MNUFC'),
+	('Portland Timbers', 'TimbersFC'),
+	('Real Salt Lake', 'RealSaltLake'),
+	('San Jose Earthquakes', 'SJEarthquakes'),
+	('Seattle Sounders FC', 'SoundersFC'),
+	('Sporting Kansas City', 'SportingKC'),
+	('Vancouver Whitecaps FC', 'WhitecapsFC');
+
 CREATE TABLE `tweet_buckets` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `handle` varchar(30) NOT NULL,

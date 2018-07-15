@@ -5,6 +5,9 @@ import base64
 CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 
+"""
+    This script can be used to fetch an application-only bearer token for use with the twitter public api
+"""
 if __name__ == '__main__':
     consumer_key = urllib.quote(CONSUMER_KEY)
     consumer_secret = urllib.quote(CONSUMER_SECRET)
@@ -22,5 +25,4 @@ if __name__ == '__main__':
     url = 'https://api.twitter.com/oauth2/token'
     response = requests.post(url, headers=headers, data=data)
 
-    print response.status_code
-    print response.content
+    print 'Bearer %s' % response.content
